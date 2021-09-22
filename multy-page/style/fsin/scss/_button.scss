@@ -1,0 +1,32 @@
+@import "__consts.scss";
+
+.button {
+	width: 142px;
+	height: 44px;
+	background-color: $main-blue;
+	border-radius: 3px;
+	padding: 10px 16px;
+}
+
+.button:hover {
+	background-color: #195EE6;
+	transition: 0.75s;
+}
+
+@media (max-width: 1024px) {
+	.drop-menu {
+		.drop-menu-application {
+				.button {
+					padding: 12px 109px;
+				}
+			}
+		}
+	.button {
+		width: 176px;
+		padding: 12px 33px;
+	}
+}
+
+@media (max-width: 650px) {
+
+}

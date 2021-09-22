@@ -1,0 +1,93 @@
+@import "_mixins.scss";
+
+.moveon-section {
+    margin-left: 250px;
+    .moveon-link {
+        @include flex ($align: center);
+        background: linear-gradient(180deg, #8253D8 0%, #D05DDE 100%);
+        padding: 100px 0;
+        .container {
+            max-width: 1140px;
+            .moveon-desc {
+                h2 {
+                    font-weight: bold;
+                    font-size: 48px;
+                    margin-bottom: 14px;
+                    line-height: 124%;
+                    max-width: 560px;
+                    color: white;
+                }
+                p {
+                    max-width: 560px;
+                    color: white;
+                }
+            }
+            .moveon-link-img {
+                width: 565px;
+                padding-left: 150px;
+            }
+        }
+    }
+}
+.moveon-link:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+@media (max-width: 1200px) {
+    .moveon-section {
+        margin-left: 200px;
+        .moveon-link {
+            padding: 80px 0;
+            .container {
+                max-width: 990px;
+                .moveon-desc {
+                    h2 {
+                        font-size: 32px;
+                        max-width: 360px;
+                    }
+                    p {
+                        max-width: 360px;
+                    }
+                }
+                .moveon-link-img {
+                    width: 490px;
+                    padding-left: 120px;
+                }
+                .moveon-link:hover {
+                    transform: scale(1.0);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .moveon-section {
+        margin-left: 105px;
+        .moveon-link {
+            padding: 50px 0;
+            .container {
+                max-width: none;
+                flex-wrap: wrap;
+                justify-content: center;
+                .moveon-desc {
+                    margin-bottom: 15px;
+                    h2 {
+                        font-size: 26px;
+                        max-width: 360px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 17px;
+                        text-align: center;
+                    }
+                }
+                .moveon-link-img {
+                    width: 300px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}

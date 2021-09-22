@@ -1,0 +1,201 @@
+.first-section {
+    font-family: Mulish;
+    font-style: normal;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1531px;
+    background:
+            url("../../../img/vso/cubes/yellow-cube.svg") 86.87% 140px no-repeat,
+            url("../../../img/vso/cubes/grey-cube.svg") 82.85% 234px no-repeat,
+            url("../../../img/vso/cubes/purple-cube.svg") 16.67% 527px no-repeat,
+            url("../../../img/vso/cubes/green-cube-top.svg") 10.69% 652px no-repeat,
+            url("../../../img/vso/cubes/pink-cube.svg") 84.03% 1219px no-repeat,
+            url("../../../img/vso/cubes/green-cube-bottom.svg") 87.22% 1270px no-repeat,
+            url("../../../img/vso/lines/line-1.svg") 0 370px/100% no-repeat,
+            url("../../../img/vso/lines/line-1.svg") 0 470px/100% no-repeat,
+            url("../../../img/vso/lines/line-2.svg") 0 870px/100% no-repeat,
+            url("../../../img/vso/lines/line-2.svg") 0 970px/100% no-repeat,
+            linear-gradient(180deg, rgba(7, 115, 250, 0.7) 0%, #0773FA 80.03%);
+}
+.first-section > h1 {
+    font-weight: 900;
+    font-size: 51px;
+    line-height: 80px;
+    margin-top: 154px;
+}
+.first-section > p {
+    width: 48.47%;
+    height: 56px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    margin-top: 20px;
+}
+.first-section > p > a {
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #033573;
+}
+.first-section > p > a:hover {
+    text-decoration: underline;
+}
+.logos {
+    margin-top: 42px;
+    width: 31.6%;
+    height: 291px;
+    display: flex;
+    justify-content: space-between;
+}
+.logos > .cex-listing > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.2px;
+}
+.gate-io-img {
+    margin-top: 18px;
+    width: 179px;
+    height: 71px;
+    background-image: url("../../../img/vso/partners/gate.io.svg");
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+.logos > .dex-listing > p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.2px;
+}
+.pango-img {
+    margin-top: 18px;
+    width: 179px;
+    height: 71px;
+    background-image: url("../../../img/vso/partners/Pangolin.svg");
+    background-repeat: no-repeat;
+}
+.partner-2-img {
+    margin-top: 18px;
+    width: 179px;
+    height: 71px;
+    background-image: url("../../../img/vso/partners/Partner 2.svg");
+    background-repeat: no-repeat;
+}
+.dctdao-img {
+    margin-top: 18px;
+    width: 179px;
+    height: 71px;
+    background-image: url("../../../img/vso/partners/DCTDAO.svg");
+    background-repeat: no-repeat;
+}
+.for-newbie {
+    margin-top: 141px;
+}
+.for-newbie > p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+.for-newbie > p > a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: #033573;
+}
+.for-newbie > p > a:hover {
+    text-decoration: underline;
+}
+.for-newbie > p > a:after {
+    content: url("../../../img/vso/interface/Icon.svg");
+}
+.metamask-add {
+    width: 61.76%;
+    height: 581px;
+    margin-top: 78px;
+}
+.metamask-add > h2 {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: -2.4px;
+}
+.add-by-step {
+    margin-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+.first-step {
+    width: 41.04%;
+    height: 531px;
+}
+.screen-1 {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    margin-left: 72.02px;
+}
+.first-step-text {
+    margin-left: 72.02px;
+    width: 293px;
+    height: 112px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 0.83)
+}
+.ellipse-1 {
+    position: absolute;
+    left: 18.38%;
+    top: 1340px;
+}
+.second-step {
+    width: 41.04%;
+    height: 531px;
+}
+.screen-2 {
+    margin-left: 72.02px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.second-step-text {
+    margin-left: 72.02px;
+    width: 293px;
+    height: 112px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: rgba(255, 255, 255, 0.83);
+}
+.ellipse-2 {
+    position: absolute;
+    left: 54.63%;
+    top: 1340px;
+}
+.first-step-text > p > a, .second-step-text > p > a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    color: #033573;
+}
+.first-step-text > p > a:hover, .second-step-text > p > a:hover {
+    text-decoration: underline;
+}

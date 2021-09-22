@@ -1,0 +1,43 @@
+.page-wrapper {
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+            a {
+                font-size: 36px;
+                font-weight: bold;
+                color: #f1f1f1;
+                z-index: 10;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+    }
+}
+
+@media (max-width: 1200px) {
+  .page-wrapper {
+    .container {
+            a {
+                font-size: 32px;
+            }
+    }
+}
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+        a {
+          font-size: 28px;
+          text-align: center;
+        }
+    }
+  }
+  

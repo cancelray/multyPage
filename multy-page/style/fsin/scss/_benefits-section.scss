@@ -1,0 +1,106 @@
+@import "__consts.scss";
+@import "__mixins.scss";
+
+.benefits {
+    padding: 120px 0 120px 0;
+        .container {
+            .benefits-content {
+                @include flex(column, space-between);
+                h2 {
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 60px;
+                    margin-bottom: 60px;
+                }
+                .benefits-desc {
+                    @include flex($justify: space-between);
+                    .white-square {
+                        border: 1px solid #DDDFE0;
+                        border-radius: 4px;
+                        padding: 52px 33px;
+                        margin-right: 32px;
+                        @include flex(column, space-between, center);
+                        .benefits-img {
+                            width: 80px;
+                            height: 80px;
+                            margin-bottom: 44px;
+                        }
+                        .benefits-txt {
+                            max-width: 222px;
+                            max-height: 96px;
+                            font-size: 18px;
+                            line-height: 24px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 1200px) {
+    .benefits {
+        padding: 60px 0;
+        .container {
+            .benefits-content {
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 40px;
+                }
+                .benefits-desc {
+                    flex-wrap: wrap;
+                    .white-square {
+                        padding: 32px 33px;
+                        margin-bottom: 24px;
+                        margin-right: 0;
+                        .benefits-img {
+                            width: 64px;
+                            height: 64px;
+                            margin-bottom: 20px;
+                        }
+                        .benefits-txt {
+                            max-width: 270px;
+                            max-height: 40px;
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .benefits {
+        padding: 40px 0;
+        .container {
+            .benefits-content {
+                h2 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 44px;
+                }
+                .benefits-desc {
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    .white-square {
+                        padding: 24px 33px;
+                        margin-bottom: 12px;
+                        margin-right: 0;
+                        .benefits-img {
+                            margin-bottom: 16px;
+                        }
+                        .benefits-txt {
+                            max-width: 254px;
+                            max-height: 36px;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

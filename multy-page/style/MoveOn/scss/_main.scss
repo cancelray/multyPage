@@ -1,0 +1,184 @@
+.container .main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.description-container {
+    display: flex;
+    justify-content: space-between;
+}
+ .text-description {
+     max-width: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+.description-head {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 124%;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.description-content {
+    font-style: normal;
+    font-weight: normal;
+}
+.right {
+    text-align: right;
+    margin-right: 20px;
+}
+.left {
+    text-align: left;
+    margin-left: 20px;
+}
+.circle-marker {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+.revers {
+    flex-direction: row-reverse;
+}
+
+.container .main-content .function {
+    margin-bottom: 23px;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 66px;
+    color: #000000;
+}
+.container .main-content .annotation {
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: #ABABAB;
+}
+.container .main-content .function-description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 101px;
+}
+.container .main-content .function-description .description-left, .container .main-content .function-description .description-right {
+    max-width: 437px;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0 154px 0;
+}
+.container .main-content .function-description .description-img-center {
+    width: 438px;
+    height: 886px;
+    background-image: url("../../../img/MoveOn/fun-descr/phone-descr.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@media (max-width: 1340px) {
+    .revers {
+        flex-direction: row;
+    }
+    .left, .right {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .container .main-content .function-description  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 350px);
+    }
+    .container .main-content .function-description .description-left {
+        height: 325px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        padding: 0;
+    }
+    .container .main-content .function-description .description-right {
+        height: 325px;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        padding: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .main-content-section {
+        padding-top: 79px;
+        padding-bottom: 51px;
+    }
+    .container .main-content {
+        justify-content: space-between;
+    }
+    .description-container {
+        justify-content: flex-start;
+    }
+    .description-head {
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .description-content {
+        font-size: 14px;
+        line-height: 124%;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .circle-marker {
+        width: 60px;
+        height: 60px;
+    }
+    .right, .left {
+        text-align: left;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .revers {
+        flex-direction: row;
+    }
+
+    .container .main-content .function {
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 52px;
+        color: #000000;
+    }
+    .container .main-content .annotation {
+        max-width: 335px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 124%;
+        letter-spacing: 0.08em;
+        color: #ABABAB;
+    }
+    .container .main-content .function-description {
+        width: 89.6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .container .main-content .function-description .description-left, .container .main-content .function-description .description-right  {
+        max-height: 262px;
+        margin-top: 0;
+    }
+    .container .main-content .function-description .description-img-center {
+        width: 283px;
+        height: 573px;
+        margin: 51px 0;
+        background-image: url("../../../img/MoveOn/fun-descr/phone-descr.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

@@ -1,0 +1,66 @@
+table {
+    margin-top: 57px;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead {
+    font-weight: bold;
+    height: 49px;
+    border-bottom: 1px solid rgba(24, 123, 245, 0.4);
+}
+.top {
+    padding-top: 7px;
+}
+.staking-pool {
+    width: 221px;
+    height: 44px;
+    vertical-align: top;
+}
+.earn {
+    width: 173px;
+    height: 44px;
+    vertical-align: top;
+}
+.apy {
+    width: 180px;
+    height: 44px;
+    vertical-align: top;
+}
+.apy-string {
+    width: 15.48%;
+    height: 34px;
+}
+thead > tr > .apy:after {
+    content: url("../../img/vso/interface/Star.svg");
+}
+.remarks {
+    width: 255px;
+    height: 44px;
+    vertical-align: top;
+}
+.remark-big {
+    height: 17.39%;
+    vertical-align: top;
+}
+.blue {
+    color: #187BF5;
+}
+.soon {
+    color: #FF655F;
+    font-style: italic;
+}
+.tbottom {
+    height: 59px;
+    border-bottom: 1px solid rgba(24, 123, 245, 0.4);
+}
+.note {
+    width: 350px;
+    height: 56px;
+    margin-right: auto;
+    margin-top: 30px;
+    background-image: url("../../../img/vso/interface/star-big.svg");
+    background-repeat: no-repeat;
+}
+.note > p {
+    margin-left: 10%;
+}

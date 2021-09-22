@@ -1,0 +1,117 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 639px;
+    flex-direction: column;
+    background: #0060E0;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+a {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    }
+a:hover {
+    color: #033573;
+    text-decoration: none;
+}
+
+.footer-logo {
+    position: absolute;
+    margin-left: 11.04%;
+    margin-top: 49px;
+}
+nav {
+    display: flex;
+    width: 100%;
+}
+.subscribe {
+    margin-left: 19.24%;
+    margin-top: 175px;
+    width: 341px;
+    height: 142px;
+    border-bottom: 4px solid #0D6BD8;
+}
+.subscribe > p {
+    Width: 197px;
+    Height: 58px;
+    font-size: 22px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+.email {
+    width: 275px;
+    height: 30px;
+    background-color: #0060E0;
+}
+.subscribe-button {
+    Width: 60px;
+    Height: 50px;
+    background-color: #0D6BD8;
+    border-radius: 8px 8px 0 0;
+}
+img[src="img/interface/ic-keyboard-arrow-right-48px.svg"] {
+    margin-left: 17px;
+}
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 133px;
+    margin-left: 9.86%;
+    width: 23.95%;
+    height: 182px;
+}
+.nav-footer-left, .nav-footer-right {
+    width: 106px;
+    height: 182px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.231818px;
+    color: #4090e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-second-container {
+    width: 77.57%;
+    height: 103px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 112px;
+}
+.copyright-and-privacy {
+    display: flex;
+    justify-content: space-between;
+}
+.socials {
+    width: 8.61%;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+}
+.copyright {
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+.privacy {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,415 @@
+@import "__consts.scss";
+@import "__mixins.scss";
+
+.form-section {
+	margin-bottom: 84px;
+	.container {
+		.form {
+			position: relative;
+			@include flex(column, $align: center);
+				h2 {
+					margin-top: 104px;
+					margin-bottom: 60px;
+					font-weight: 500;
+					font-size: 40px;
+					line-height: 60px;
+				}
+				.application-form {
+					form {
+						border: 1px solid #DDDFE0;
+						border-radius: 6px;
+						margin: 0 auto;
+						width: 864px;
+						h3 {
+							font-weight: 500;
+							font-size: 18px;
+							line-height: 24px;
+							margin-top: 42px;
+							margin-bottom: 30px;
+						}
+						input {
+							height: 64px;
+							font-size: 16px;
+							line-height: 24px;
+							padding-left: 18px;
+							margin-bottom: 10px;
+							background: $light-grey-color;
+						}
+						.long-input {
+							width: 592px;
+						}
+						.short-input {
+							width: 279px;
+						}
+
+						.form-container-1 {
+							padding: 0 136px 0 136px;
+							border-bottom: 1px solid #DDDFE0;
+							.your-data {
+								@include flex(column, space-between, center);
+								padding-bottom: 40px;
+								.connection {
+									width: 592px;
+									height: 64px;
+									@include flex($justify: space-between);
+								}
+							}
+						}
+
+						.form-container-2 {
+							padding: 0 136px 0 136px;
+							border-bottom: 1px solid #DDDFE0;
+							.prisoner-data {
+								width: 100%;
+								height: 448px;
+								@include flex(column, space-between, center);
+									.judicial-information {
+										@include flex(column, space-between);
+										align-content: space-between;
+										width: 592px;
+										height: 256px;
+										flex-wrap: wrap;
+									}
+							}
+
+							.file-loader {
+									@include flex($justify: center);
+									position: relative;
+									input {
+										opacity: 0;
+										visibility: hidden;
+										position: absolute;
+									}
+									label {
+										margin-top: 32px;
+										margin-bottom: 40px;
+										width: 592px;
+										height: 132px;
+										border: 1px dashed $dark-grey-color;
+										border-radius: 4px;
+										font-size: 16px;
+										line-height: 24px;
+										color: $dark-grey-color;
+										padding: 22px 50px;
+											p {
+												padding-left: 33px;
+											}
+											.file-choose {
+												display: block;
+												font-size: 14px;
+												line-height: 24px;
+												margin-top: 16px;
+												width: 136px;
+												height: 44px;
+												border: 1px solid $main-blue;
+												border-radius: 3px;
+												padding: 10px 16px;
+												color: $main-blue;
+											}
+											.file-choose:hover {
+												cursor: pointer;
+											}
+									}
+									label::before {
+										content: url("../../../img/fsin/main-content/form/file-clip.png");
+										position: absolute;
+									}
+								}
+						}
+
+						.form-container-3 {
+							padding: 46px 136px 48px 136px;
+							@include flex($justify: space-between, $align: center);
+								.terms-accept {
+									width: 30px;
+									height: 30px;
+									margin-right: 16px;
+								}
+								.checkbox-accept {
+									@include flex($justify: space-between, $align: center);
+									label {
+										font-size: 14px;
+										line-height: 18px;
+										a {
+											font-size: 14px;
+											line-height: 18px;
+											color: $main-blue;
+										}
+										a:hover {
+											text-decoration: underline;
+										}
+									}
+								}
+								.application-submit {
+									font-size: 14px;
+									line-height: 24px;
+									color:#FFFFFF;
+								}
+						}
+					}
+				}
+		}
+
+		.application-popup {
+			visibility: hidden;
+			position: absolute;
+			top: 50%;
+			padding: 32px 32px 104px 81px;
+			z-index: 100;
+			background: #FFFFFF;
+			box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+			border-radius: 30px;
+			@include flex(column, space-between, center);
+				.close-button {
+					margin-left: auto;
+				}
+				.close-button:hover {
+					cursor: pointer;
+				}
+				.popup-content {
+					@include flex(column, $align: center);
+						.done-img {
+							margin: 48px 0 60px 0;
+						}
+					div {
+						padding-right: 51px;
+						@include flex(column, space-between, center);
+							h4 {
+								margin-bottom: 32px;
+								text-align: center;
+								font-weight: 500;
+								font-size: 32px;
+								line-height: 40px;
+							}
+							p {
+								text-align: center;
+								font-size: 18px;
+								line-height: 24px;
+							}
+					}
+				}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.form-section {
+		margin-bottom: 60px;
+		.container {
+			.form {
+				h2 {
+					font-size: 24px;
+					line-height: 28px;
+					margin-top: 60px;
+				}
+				.application-form {
+					form {
+						width: 696px;
+						h3 {
+							font-size: 16px;
+							margin-top: 32px;
+							margin-bottom: 20px;
+						}
+						.long-input {
+							width: 568px;
+						}
+						.short-input {
+							width: 272px;
+						}
+						.form-container-1 {
+							padding: 0 64px;
+							border-bottom: 1px solid #DDDFE0;
+							.your-data {
+								padding-bottom: 36px;
+								.connection {
+									width: 568px;
+								}
+							}
+						}
+						.form-container-2 {
+							padding: 0 64px;
+							border-bottom: 1px solid #DDDFE0;
+							.prisoner-data {
+								height: 416px;
+								.judicial-information {
+									width: 568px;
+									height: 248px;
+								}
+							}
+							.file-loader {
+								label {
+									margin-top: 28px;
+									width: 568px;
+									padding: 24px 18px;
+
+									p {
+										padding-left: 33px;
+									}
+								}
+
+								label::before {
+									content: url("../../../img/fsin/main-content/form/file-clip.png");
+									position: absolute;
+								}
+							}
+						}
+
+						.form-container-3 {
+							padding: 36px 120px;
+							border-bottom: 1px solid #DDDFE0;
+							.checkbox-accept {
+								.terms-accept {
+									width: 30px;
+									height: 30px;
+								}
+								label {
+									max-width: 170px;
+									height: 36px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.form-section {
+		margin-bottom: 0;
+		.container {
+			.form {
+				h2 {
+					font-size: 20px;
+					line-height: 24px;
+					margin-top: 40px;
+				}
+				.application-form {
+					form {
+						width: 312px;
+						border: none;
+						h3 {
+							font-size: 16px;
+							line-height: 24px;
+							margin-left: 0;
+							margin-top: 0;
+							margin-bottom: 16px;
+						}
+						input {
+							height: 54px;
+							line-height: 20px;
+							margin-bottom: 0;
+						}
+
+						.long-input, .short-input {
+							width: 312px;
+							margin-bottom: 12px;
+						}
+						.form-container-1 {
+							padding: 0 0;
+							width: 100%;
+							border-bottom: none;
+							.your-data {
+								height: 218px;
+								padding-bottom: 32px;
+								.connection {
+									width: 100%;
+									height: 120px;
+									flex-direction: column;
+								}
+							}
+						}
+						.form-container-2 {
+							padding: 0 0;
+							border-bottom: none;
+							.prisoner-data {
+								height: 528px;
+								justify-content: flex-start;
+
+								.judicial-information {
+									width: 312px;
+									height: 384px;
+									flex-direction: row;
+									flex-wrap: wrap;
+								}
+							}
+							.file-loader {
+								label {
+									margin-top: 0;
+									margin-bottom: 0;
+									width: 312px;
+									height: 156px;
+									padding: 24px 18px;
+
+									p {
+										padding-left: 33px;
+									}
+								}
+							}
+						}
+						.form-container-3 {
+							padding: 40px 0 60px 0;
+							flex-direction: column;
+							align-items: flex-start;
+							.checkbox-accept {
+								margin-bottom: 32px;
+								.terms-accept {
+									width: 30px;
+									height: 30px;
+								}
+								label {
+									width: 170px;
+									height: 36px;
+									margin-right: 98px;
+									margin-bottom: 0;
+								}
+							}
+
+							.button {
+								width: 100%;
+								max-width: 312px;
+							}
+							.application-submit {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+
+				.application-popup {
+					visibility: hidden;
+					position: absolute;
+					top: 50%;
+					padding: 14px 14px 48px 33px;
+					border-radius: 15px;
+						.close-button {
+							width: 24px;
+							height: 24px;
+						}
+					.popup-content {
+						@include flex(column, $align: center);
+
+						.done-img {
+							margin: 10px 0 24px 0;
+							width: 28px;
+							height: 28px;
+						}
+						div {
+							padding-right: 0;
+							h4 {
+								margin-bottom: 8px;
+								text-align: center;
+								font-size: 18px;
+								line-height: 20px;
+							}
+							p {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

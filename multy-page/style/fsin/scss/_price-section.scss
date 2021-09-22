@@ -1,0 +1,107 @@
+@import "__consts.scss";
+@import "__mixins.scss";
+
+.price {
+    padding: 120px 0 128px 0;
+    background: url("../../../img/fsin/main-content/price/price-background.png") 100% 100%/cover no-repeat;
+        .container {
+            .price-content {
+                max-width: 404px;
+                @include flex(column, $align: flex-start);
+                h3 {
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 60px;
+                    margin-bottom: 39px;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-size: 100px;
+                    line-height: 117px;
+                    color: $main-blue;
+                    margin-bottom: 22px;
+                }
+                p {
+                    font-weight: 500;
+                    line-height: 32px;
+                    margin-bottom: 20px;
+                }
+                .price-explain {
+                    font-size: 18px;
+                    line-height: 24px;
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+}
+
+@media (max-width: 1200px) {
+    .price {
+        padding: 60px 0 80px 0;
+        background: url("../../../img/fsin/main-content/price/price-background-992px.png") 100% 100%/cover no-repeat;
+        .container {
+            .price-content {
+                max-width: 212px;
+                h3 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 48px;
+                }
+                h2 {
+                    font-size: 64px;
+                    line-height: 75px;
+                    margin-bottom: 17px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+                .price-explain {
+                    font-size: 16px;
+                    line-height: 20px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .price {
+        padding: 40px 0;
+        height: 480px;
+        background: url("../../../img/fsin/main-content/price/price-background-mobile.png") 100% 100%/cover no-repeat;
+        .container {
+            .price-content {
+                max-width: 313px;
+                h3 {
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 36px;
+                }
+                h2 {
+                    font-size: 48px;
+                    line-height: 56px;
+                    margin-bottom: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .price-explain {
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

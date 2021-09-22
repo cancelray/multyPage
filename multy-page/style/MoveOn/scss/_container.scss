@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media (max-width: 1340px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        flex-direction: column;
+        max-width: none;
+    }
+}
+
+

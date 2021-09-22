@@ -1,0 +1,91 @@
+@import "__mixins.scss";
+
+.site-info {
+	background: url("../../../img/fsin/header/header-background.png") center/cover no-repeat;
+	height: 620px;
+	margin-top: 80px;
+	.container {
+		.header-site-desc {
+			@include flex(column, space-between);
+			max-width: 579px;
+			height: 361px;
+			margin-top: 131px;
+			.desc-head {
+				width: 100%;
+				height: 128px;
+				h1 {
+					font-weight: 500;
+					font-size: 60px;
+					line-height: 64px;
+				}
+			}
+			.description {
+				max-width: 410px;
+				height: 96px;
+			}
+			.application-button {
+				.application {
+					font-size: 14px;
+					line-height: 24px;
+					color: #FFFFFF;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.site-info {
+		background: url("../../../img/fsin/header/header-background-tablet.png") center/cover no-repeat;
+		height: 348px;
+		margin-top: 72px;
+		.container {
+			.header-site-desc {
+				max-width: 336px;
+				height: 224px;
+				margin-top: 60px;
+				.desc-head {
+					width: 100%;
+					height: 72px;
+					h1 {
+						font-size: 32px;
+						line-height: 36px;
+					}
+				}
+				.description {
+					max-width: 336px;
+					height: 60px;
+				}
+				.application-button {
+					.application {
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.site-info {
+		height: 408px;
+		background: url("../../../img/fsin/header/header-background-mobile.png") center/cover no-repeat;
+		margin-top: 56px;
+		.container {
+			.header-site-desc {
+				margin-top: 24px;
+				.desc-head {
+					h1 {
+						font-size: 24px;
+						line-height: 28px;
+					}
+				}
+				.description {
+					max-width: 290px;
+					height: 80px;
+				}
+			}
+		}
+	}
+}

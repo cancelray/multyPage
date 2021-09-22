@@ -1,0 +1,157 @@
+@import "__mixins.scss";
+@import "__consts.scss";
+
+.fixed {
+	position: fixed;
+}
+a {
+	color: $text-main-color;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 24px;
+}
+a:hover {
+	color: $main-blue;
+	transition: 0.5s;
+}
+.display-menu {
+	display: none;
+}
+.display-portable {
+	display: none;
+}
+
+.header-nav {
+	@include flex($justify: center, $align: center);
+	width: 100%;
+	height: 80px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+	background: #FFFFFF;
+		.container {
+			.navigation {
+				@include flex($justify: space-between, $align: center);
+				width: 1216px;
+				height: 48px;
+				margin: 0 auto;
+				.logo {
+					@include flex($align: center);
+					padding-left: 68px;
+					width: 155px;
+					height: 100%;
+
+					a {
+						font-size: 16px;
+						font-weight: 500;
+						@include flex($align: center);
+						.logo-desc {
+							color: $text-main-color;
+							margin-left: 20px;
+							@include flex($align: center);
+							span {
+								color: $main-blue;
+								margin-left: 8px;
+							}
+						}
+					}
+
+				}
+
+				.nav-links {
+					@include flex($justify: space-between);
+					width: 647px;
+					height: 24px;
+				}
+			}
+		}
+}
+
+@media (max-width: 1200px) {
+	.header-nav {
+		height: 72px;
+		.container {
+			.navigation {
+				width: 696px;
+				height: 48px;
+				margin: 0 auto;
+				.logo {
+					padding-left: 0;
+				}
+				.display-menu {
+					display: block;
+				}
+				.display-tablet {
+					display: none;
+				}
+				.telephone {
+					margin-left: 346px;
+				}
+			}
+			.drop-menu {
+				visibility: hidden;
+				max-width: 360px;
+				position: absolute;
+				top: 80px;
+				left: 30%;
+				@include flex(column);
+				background: $light-grey-color;
+					.mobile-menu-block {
+						background-color: #FFFFFF;
+						padding: 16px 180px 16px 16px;
+						border-bottom: 1px solid $light-grey-color;
+							a {
+								font-size: 16px;
+								line-height: 24px;
+							}
+							.drop-menu-telephone {
+								font-weight: 500;
+							}
+					}
+					.drop-menu-logo {
+						@include flex($justify: space-between, $align: center);
+						padding: 12px 24px;
+							.logo {
+								img {
+									width: 32px;
+									height: 32px;
+								}
+							}
+					}
+					.drop-menu-application {
+						margin: 223px 16px 0 16px;
+						.application {
+							width: 328px;
+							font-size: 14px;
+							line-height: 20px;
+							color: #FFFFFF;
+						}
+					}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.header-nav {
+		height: 56px;
+		.container {
+			.navigation {
+				padding: 12px 24px;
+				width: 100%;
+				.logo {
+					padding-left: 0;
+						img {
+							width: 32px;
+							height: 32px;
+						}
+				}
+				.display-menu {
+					display: block;
+				}
+				.display-mobile {
+					display: none;
+				}
+			}
+		}
+	}
+}

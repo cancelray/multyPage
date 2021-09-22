@@ -1,0 +1,170 @@
+@import "__consts.scss";
+@import "__mixins.scss";
+
+.prepare {
+    padding: 120px 0 165px 0;
+    @include flex($justify: center);
+    .container{
+        .prepare-content {
+            @include flex($justify: space-between);
+            .prepare-discr {
+                @include flex(column, space-between);
+                max-width: 518px;
+                h2 {
+                    margin-bottom: 80px;
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+                ul {
+                    list-style-type: none;
+                    li {
+                        font-weight: 500;
+                        line-height: 32px;
+                        margin-bottom: 48px;
+                        p {
+                            position: relative;
+                            margin-left: 80px;
+                        }
+                        p::before {
+                            content: url("../../../img/fsin/main-content/list-check/check.svg");
+                            position: absolute;
+                            left: -80px;
+                        }
+                        .explain {
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-top: 23px;
+                        }
+                        .explain::before {
+                            content: "";
+                        }
+                    }
+                }
+            }
+            .judge {
+                width: 488px;
+                height: 488px;
+                background: #FFFFFF;
+                box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+                border-radius: 30px;
+                padding: 140px 68px;
+                h2 {
+                    color: $main-blue;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 40px;
+                    margin-bottom: 32px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px)  {
+    .prepare {
+        padding: 60px 0 58px 0;
+        @include flex($justify: center);
+        .container {
+            .prepare-content {
+                .prepare-discr {
+                    max-width: 322px;
+                    h2 {
+                        margin-bottom: 56px;
+                        font-size: 24px;
+                        line-height: 28px;
+                    }
+                    ul {
+                        li {
+                            font-size: 16px;
+                            line-height: 20px;
+                            p {
+                                margin-left: 49px;
+                            }
+                            p::before {
+                                content: url("../../../img/fsin/main-content/list-check/check-992px.svg");
+                                width: 30px;
+                                height: 30px;
+                                position: absolute;
+                                left: -49px;
+                            }
+                            .explain {
+                                font-size: 12px;
+                                line-height: 14px;
+                                margin-top: 12px;
+                            }
+                            .explain::before {
+                                content: "";
+                            }
+                        }
+                    }
+                }
+                .judge {
+                    width: 336px;
+                    height: 314px;
+                    padding: 80px 60px;
+
+                    h2 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .prepare {
+        padding: 40px 0 60px 0;
+        .container {
+            .prepare-content {
+                flex-direction: column;
+                align-items: center;
+                .prepare-discr {
+                    h2 {
+                        margin-bottom: 32px;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                    ul {
+                        li {
+                            font-size: 14px;
+                            p {
+                                margin-left: 43px;
+                            }
+                            p::before {
+                                content: url("../../../img/fsin/main-content/list-check/check-mobile.svg");
+                                width: 24px;
+                                height: 24px;
+                                position: absolute;
+                                left: -44px;
+                            }
+                        }
+                    }
+                }
+                .judge {
+                    width: 312px;
+                    height: 292px;
+                    padding: 73px 47px;
+
+                    h2 {
+                        font-size: 18px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

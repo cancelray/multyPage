@@ -1,0 +1,166 @@
+@import "_consts.scss";
+@import "_mixins.scss";
+
+.navigation-block {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background: linear-gradient(180deg, #4398f3 0%, #75b1f1 100%);
+    @include flex (column);
+    .navigation-menu {
+        color: #283049;
+        @include flex (column);
+        .logo {
+            width: 100px;
+            height: 100px;
+            padding-top: 40px;
+            margin: 0 auto;
+        }
+        h2 {
+            margin: 50px 0 10px 0;
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .navigation-menu-section {
+            @include flex (column);
+            padding: 30px 10px 25px 10px;
+            .vso-logo {
+                width: 200px;
+                height: 45px;
+            }
+            .moveom-logo {
+                width: 200px;
+                height: 45px;
+            }
+            .fsin-logo {
+                max-width: 200px;
+                height: 50px;
+                a {
+                display: flex;
+                .logo-desc {
+                    color: $text-main-color;
+                    margin-left: 20px;
+                    @include flex ($align: center);
+                    span {
+                        margin-left: 8px;
+                    }
+                }
+                }
+            }
+            .navigation-socials {
+                @include flex ($justify: space-between, $align: center);
+                max-width: 80px;
+                width: 100%;
+                .social-icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }   
+}
+
+@media (max-width: 1200px) {
+    .navigation-block {
+        position: fixed;
+        width: 200px;
+        .navigation-menu {
+            .logo {
+                width: 80px;
+                height: 80px;
+                padding-top: 40px;
+                margin: 0 auto;
+            }
+            h2 {
+                margin: 40px 0 10px 0;
+                font-size: 20px;
+            }
+            .navigation-menu-section {
+                padding: 25px 8px 20px 8px;
+                .vso-logo {
+                    width: 180px;
+                    height: 45px;
+                }
+                .moveom-logo {
+                    width: 180px;
+                    height: 45px;
+                }
+                .fsin-logo {
+                    max-width: 180px;
+                    height: 50px;
+                    a {
+                    display: flex;
+                    .logo-desc {
+                        margin-left: 15px;
+                        span {
+                            margin-left: 5px;
+                        }
+                    }
+                    }
+                }
+                .navigation-socials {
+                    max-width: 60px;
+                    .social-icon {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation-block {
+        position: fixed;
+        width: 105px;
+        .navigation-menu {
+            .logo {
+                width: 50px;
+                height: 50px;
+                padding-top: 20px;
+                margin: 0 auto;
+            }
+            h2 {
+                margin: 35px 0 10px 0;
+                font-size: 15px;
+            }
+            .navigation-menu-section {
+                padding: 18px 8px 18px 8px;
+                .vso-logo {
+                    width: 85px;
+                    height: 30px;
+                }
+                .moveom-logo {
+                    width: 85px;
+                    height: 30px;
+                }
+                .fsin-logo {
+                    max-width: 85px;
+                    height: 30px;
+                    a {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .logo-desc {
+                        font-size: 17px;
+                        margin-left: 0px;
+                        span {
+                            margin-left: 4px;
+                        }
+                    }
+                    }
+                }
+                .navigation-socials {
+                    max-width: 70px;
+                    .social-icon {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }   
+    }
+}

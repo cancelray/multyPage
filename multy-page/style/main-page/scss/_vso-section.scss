@@ -1,0 +1,107 @@
+@import "_mixins.scss";
+
+.vso-section {
+        margin-left: 250px;
+        .vso-link {
+                padding: 310px 0;
+                background:
+                        url("../../../img/main-page/vso-section/yellow-cube.svg") 86.87% 80px no-repeat,
+                        url("../../../img/main-page/vso-section/grey-cube.svg") 82.85% 134px no-repeat,
+                        url("../../../img/main-page/vso-section/purple-cube.svg") 10.67% 327px no-repeat,
+                        url("../../../img/main-page/vso-section/green-cube-top.svg") 10.69% 4520px no-repeat,
+                        url("../../../img/main-page/vso-section/pink-cube.svg") 84.03% 6190px no-repeat,
+                        url("../../../img/main-page/vso-section/green-cube-bottom.svg") 87.22% 8700px no-repeat,
+                        linear-gradient(180deg, rgba(7, 115, 250, 0.7) 0%, #0773FA 80.03%);                     
+                .container {
+                        flex-direction: column;
+                        align-items: center;       
+                        .vso-head {
+                                max-width: 550px;
+                                font-weight: 800;
+                                font-size: 44px;
+                                line-height: 80px;
+                                text-align: center;
+                                letter-spacing: -2.4px;
+                                color: #283049;
+                        }
+                        .vso-desc {
+                                max-width: 1100px;
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 21px;
+                                line-height: 28px;
+                                color: #283049;
+                                text-align: center;
+                        }
+                }       
+    }
+}
+.vso-section:hover .vso-link {
+        transform: scale(1.1);
+        transition: all 1s;
+        background:
+            url("../../../img/main-page/vso-section/yellow-cube.svg") 86.87% 900px no-repeat,
+            url("../../../img/main-page/vso-section/grey-cube.svg") 82.85% 1340px no-repeat,
+            url("../../../img/main-page/vso-section/purple-cube.svg") 10.67% 3270px no-repeat,
+            url("../../../img/main-page/vso-section/green-cube-top.svg") 10.69% 80px no-repeat,
+            url("../../../img/main-page/vso-section/pink-cube.svg") 84.03% 134px no-repeat,
+            url("../../../img/main-page/vso-section/green-cube-bottom.svg") 87.22% 327px no-repeat,
+            linear-gradient(180deg, rgba(7, 115, 250, 0.7) 0%, #0773FA 80.03%);
+}
+
+@media (max-width: 1200px) {
+        .vso-section {
+                margin-left: 200px;
+                .vso-link {
+                        padding: 290px 0;
+                        background:
+                                url("../../../img/main-page/vso-section/yellow-cube.svg") 86.87% 60px no-repeat,
+                                url("../../../img/main-page/vso-section/grey-cube.svg") 82.85% 114px no-repeat,
+                                url("../../../img/main-page/vso-section/purple-cube.svg") 10.67% 297px no-repeat,
+                                linear-gradient(180deg, rgba(7, 115, 250, 0.7) 0%, #0773FA 80.03%);
+                        .container {
+                                .vso-head {
+                                        max-width: 450px;
+                                        font-size: 36px;
+                                        line-height: 70px;
+                                }
+                                .vso-desc {
+                                        max-width: 850px;
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                }
+                        }       
+            }
+        }
+        .vso-section:hover .vso-link {
+                transform: scale(1.0);
+                transition: all 1s;
+        }
+}
+
+@media (max-width: 768px) {
+        .vso-section {
+                margin-left: 105px;
+                .vso-link {
+                        padding: 100px 0;
+                        background:
+                                url("../../../img/main-page/vso-section/yellow-cube.svg") 76.87% 40px no-repeat,
+                                url("../../../img/main-page/vso-section/grey-cube.svg") 82.85% 90 px no-repeat,
+                                url("../../../img/main-page/vso-section/purple-cube.svg") 10.67% 157px no-repeat,
+                                linear-gradient(180deg, rgba(7, 115, 250, 0.7) 0%, #0773FA 80.03%);
+                        .container {
+                                .vso-head {
+                                        max-width: 500px;
+                                        font-size: 26px;
+                                        line-height: 50px;
+                                }
+                                .vso-desc {
+                                        max-width: 600px;
+                                        font-size: 17px;
+                                        line-height: 20px;
+                                }
+                        }       
+            }
+        }
+}
+      

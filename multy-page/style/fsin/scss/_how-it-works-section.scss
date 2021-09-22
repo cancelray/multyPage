@@ -1,0 +1,195 @@
+@import "__consts.scss";
+@import "__mixins.scss";
+
+.order-1 {
+    order: 1;
+}
+.order-2 {
+    order: 2;
+}
+.order-3 {
+    order: 3;
+}
+.order-4 {
+    order: 4;
+}
+.order-5 {
+    order: 5;
+}
+.order-6 {
+    order: 6;
+}
+.order-7 {
+    order: 7;
+}
+
+.how-it-works {
+    width: 100%;
+    padding: 120px 0 120px 0;
+    background: #EEF2F7;
+    @include flex($justify: center, $align: center);
+        .container {
+            .how-it-works-content {
+                @include flex(column);
+                h2 {
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 60px;
+                }
+                p {
+                    margin-bottom: 70px;
+                }
+                .how-it-works-list {
+                    max-height: 330px;
+                    @include flex(column, $align: space-between);
+                    flex-wrap: wrap;
+                    .list-item {
+                        @include flex();
+                        font-size: 18px;
+                        max-width: 558px;
+                        max-height: 120px;
+                        margin-bottom: 40px;
+                        margin-right: 101px;
+                        .list-number {
+                            width: 21px;
+                            height: 24px;
+                            margin-right: 17px;
+                            font-weight: 500;
+                            font-size: 18px;
+                            color: $main-blue;
+                        }
+                    }
+                    .order-7 {
+                        margin-bottom: 0;
+                    }
+                    .list-warning {
+                        width: 520px;
+                        height: 90px;
+                        margin-bottom: 0;
+                        background: #FFFFFF;
+                        border-radius: 8px;
+                        padding: 23px 49px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+}
+
+@media (max-width: 1200px) {
+    .order-1 {
+        order: 1;
+    }
+    .order-2 {
+        order: 1;
+    }
+    .order-3 {
+        order: 1;
+    }
+    .order-4 {
+        order: 1;
+    }
+    .order-5 {
+        order: 1;
+    }
+    .order-6 {
+        order: 1;
+    }
+    .order-7 {
+        order: 1;
+    }
+    .how-it-works {
+        padding: 60px 0;
+        @include flex($justify: center);
+        height: 724px;
+        .container {
+            .how-it-works-content {
+                @include flex(column);
+
+                h2 {
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 36px;
+                }
+                .how-it-works-list {
+                    max-height: 330px;
+                    @include flex(column, $align: space-between);
+                    flex-wrap: nowrap;
+
+                    .list-item {
+                        @include flex();
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                        margin-right: 0;
+                        max-width: 601px;
+                        max-height: 108px;
+
+                        .list-number {
+                            width: 19px;
+                            height: 19px;
+                            margin-right: 17px;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                    }
+                    .order-7 {
+                        margin-bottom: 20px;
+                    }
+                    .list-warning {
+                        font-size: 16px;
+                        line-height: 20px;
+                        max-width: 697px;
+                        width: 100%;
+                        height: 80px;
+                        padding: 20px 130px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .how-it-works {
+        padding: 40px 0;
+        .container {
+            .how-it-works-content {
+                h2 {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                .how-it-works-list {
+                    max-height: 152px;
+                    align-items: flex-start;
+                    .list-item {
+                        font-size: 14px;
+                        line-height: 18px;
+                        margin-bottom: 16px;
+                        max-height: 152px;
+                    }
+                    .order-7 {
+                        margin-bottom: 16px;
+                    }
+                    .list-warning {
+                        font-size: 14px;
+                        line-height: 18px;
+                        width: 100%;
+                        height: 90px;
+                        padding: 18px 23px;
+                    }
+                }
+            }
+        }
+    }
+}
